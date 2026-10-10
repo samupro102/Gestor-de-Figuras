@@ -38,6 +38,12 @@ public class ControladorRectangulo {
             vista.mostrarResultado("Área del rectángulo: " + rectangulo.calcularArea());
         }
     }
+    public void moverRectangulo() {
+        if (hayRectangulo()) {
+            rectangulo.mover(vista.getDx(), vista.getDy());
+            vista.mostrarResultado("Movido: " + rectangulo);
+        }
+    }
  
  
  
