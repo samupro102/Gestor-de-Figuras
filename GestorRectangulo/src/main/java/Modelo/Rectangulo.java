@@ -58,6 +58,11 @@ public class Rectangulo extends FiguraGeometrica {
                 && p.getY() >= yMin && p.getY() <= yMax;
     }
     
+    public String toString(){
+        
+        return  nombre + "con esquinas:" + esquina1 + esquina2 + "con la base" + getBase() +  "Y la latura" + getAltura() + " y el area " + calcularArea();
+    }
+    
     
     }
     
