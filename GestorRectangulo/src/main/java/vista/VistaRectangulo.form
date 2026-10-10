@@ -27,31 +27,31 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtFactor" max="32767" attributes="0"/>
+                  <Component id="lblFactor" max="32767" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="txtPx" alignment="0" max="32767" attributes="0"/>
-                      <Component id="txtPy" alignment="0" max="32767" attributes="0"/>
-                      <Component id="txtDx" alignment="0" max="32767" attributes="0"/>
-                      <Component id="txtDy" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblPx" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblPy" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblDx" alignment="0" max="32767" attributes="0"/>
+                      <Component id="lblDy" alignment="0" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="txtY2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtX2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtY1" alignment="0" max="32767" attributes="0"/>
-                  <Component id="txtX1" max="32767" attributes="0"/>
+                  <Component id="lblY2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="lblX2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="lblY1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="lblX1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTextField8" min="-2" pref="71" max="-2" attributes="0"/>
-                  <Component id="jTextField9" min="-2" pref="71" max="-2" attributes="0"/>
-                  <Component id="jTextField10" min="-2" pref="71" max="-2" attributes="0"/>
-                  <Component id="jTextField6" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="txtDx" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="txtDy" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="txtFactor" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="txtPy" min="-2" pref="71" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextField1" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jTextField3" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jTextField4" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jTextField5" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="txtX1" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="txtY1" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="txtX2" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="txtY2" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="txtPx" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -80,22 +80,22 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtX1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnCrear" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblY1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtY1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnArea" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblX2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtX2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -109,36 +109,36 @@
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="lblY2" min="-2" max="-2" attributes="0"/>
                       <Component id="txtY2" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField4" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Component id="btnEscalar" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblPx" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtPx" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnVerificar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lblPy" min="-2" max="-2" attributes="0"/>
                   <Component id="txtPy" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField6" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lblDx" min="-2" max="-2" attributes="0"/>
                   <Component id="txtDx" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField8" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="lblDy" min="-2" max="-2" attributes="0"/>
                   <Component id="txtDy" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblFactor" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtFactor" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="145" max="32767" attributes="0"/>
           </Group>
@@ -146,92 +146,92 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="txtX1">
+    <Component class="javax.swing.JLabel" name="lblX1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Esquina 1 - X:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="txtX1">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtPy">
+    <Component class="javax.swing.JLabel" name="lblPy">
       <Properties>
         <Property name="text" type="java.lang.String" value="Punto - Y:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtPx">
+    <Component class="javax.swing.JLabel" name="lblPx">
       <Properties>
         <Property name="text" type="java.lang.String" value="Punto - X:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtY1">
+    <Component class="javax.swing.JLabel" name="lblY1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Esquina 1 - Y:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtX2">
+    <Component class="javax.swing.JLabel" name="lblX2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Esquina 2 - X:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtY2">
+    <Component class="javax.swing.JLabel" name="lblY2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Esquina 2 - Y:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtFactor">
+    <Component class="javax.swing.JLabel" name="lblFactor">
       <Properties>
         <Property name="text" type="java.lang.String" value="Factor escala:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtDx">
+    <Component class="javax.swing.JLabel" name="lblDx">
       <Properties>
         <Property name="text" type="java.lang.String" value="Mover dx:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="txtDy">
+    <Component class="javax.swing.JLabel" name="lblDy">
       <Properties>
         <Property name="text" type="java.lang.String" value="Mover dy:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="txtY1">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="txtX2">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="txtY2">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="txtPx">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="txtPy">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField8">
+    <Component class="javax.swing.JTextField" name="txtDx">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField9">
+    <Component class="javax.swing.JTextField" name="txtDy">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
+    <Component class="javax.swing.JTextField" name="txtFactor">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
