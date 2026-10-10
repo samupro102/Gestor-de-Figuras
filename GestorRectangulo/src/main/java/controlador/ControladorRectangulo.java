@@ -50,6 +50,16 @@ public class ControladorRectangulo {
             vista.mostrarResultado("Escalado: " + rectangulo);
         }
     }
+    public void verificarPunto() {
+        if (hayRectangulo()) {
+            Punto p = new Punto(vista.getPx(), vista.getPy());
+            if (rectangulo.contienePunto(p)) {
+                vista.mostrarResultado("El punto " + p + " está DENTRO del rectángulo.");
+            } else {
+                vista.mostrarResultado("El punto " + p + " está FUERA del rectángulo.");
+            }
+        }
+    }
  
  
  
