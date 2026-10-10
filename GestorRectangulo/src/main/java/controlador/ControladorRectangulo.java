@@ -20,7 +20,13 @@ public class ControladorRectangulo {
         this.rectangulo = null;
         this.vista.setControlador(this);
     }
-    
+     private boolean hayRectangulo() {
+        if (rectangulo == null) {
+            vista.mostrarResultado("Primero debe crear el rectángulo.");
+            return false;
+        }
+        return true;
+    }
     
     
     
