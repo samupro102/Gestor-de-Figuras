@@ -33,6 +33,27 @@ public class ControladorRectangulo {
         rectangulo = new Rectangulo(p1, p2);
         vista.mostrarResultado("Creado: " + rectangulo);
     }
+     public void mostrarArea() {
+        if (hayRectangulo()) {
+            vista.mostrarResultado("Área del rectángulo: " + rectangulo.calcularArea());
+        }
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 }
    
     
