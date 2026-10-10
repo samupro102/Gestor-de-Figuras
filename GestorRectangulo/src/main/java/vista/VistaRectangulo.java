@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package vista;
-
+import controlador.ControladorRectangulo;
 /**
  *
  * @author Windows 11
@@ -18,12 +18,10 @@ public class VistaRectangulo extends javax.swing.JFrame {
     public VistaRectangulo() {
         initComponents();
     }
-    public void setControlador(java.awt.event.ActionListener c) {
-        btnCrear.addActionListener(c);
-        btnArea.addActionListener(c);
-        btnMover.addActionListener(c);
-        btnEscalar.addActionListener(c);
-        btnVerificar.addActionListener(c);
+        private ControladorRectangulo controlador;
+
+    public void setControlador(ControladorRectangulo controlador) {
+        this.controlador = controlador;
     }
 
     public double getX1() {
@@ -126,14 +124,19 @@ public class VistaRectangulo extends javax.swing.JFrame {
         txtDy.addActionListener(this::txtDyActionPerformed);
 
         btnCrear.setText("Crear rectángulo");
+        btnCrear.addActionListener(this::btnCrearActionPerformed);
 
         btnArea.setText("Calcular área");
+        btnArea.addActionListener(this::btnAreaActionPerformed);
 
         btnMover.setText("Mover");
+        btnMover.addActionListener(this::btnMoverActionPerformed);
 
         btnEscalar.setText("Escalar");
+        btnEscalar.addActionListener(this::btnEscalarActionPerformed);
 
         btnVerificar.setText("Verificar punto");
+        btnVerificar.addActionListener(this::btnVerificarActionPerformed);
 
         txtResultado.setEditable(false);
         txtResultado.setColumns(20);
@@ -148,11 +151,10 @@ public class VistaRectangulo extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblFactor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(lblPx, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblPy, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblDx, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblDy, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblPx, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblPy, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblDx, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblDy, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblY2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblX2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblY1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -248,6 +250,26 @@ public class VistaRectangulo extends javax.swing.JFrame {
     private void txtDyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDyActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDyActionPerformed
+
+    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
+                controlador.crearRectangulo();
+    }//GEN-LAST:event_btnCrearActionPerformed
+
+    private void btnAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAreaActionPerformed
+               controlador.mostrarArea();
+    }//GEN-LAST:event_btnAreaActionPerformed
+
+    private void btnMoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoverActionPerformed
+                controlador.moverRectangulo();
+    }//GEN-LAST:event_btnMoverActionPerformed
+
+    private void btnEscalarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEscalarActionPerformed
+                controlador.escalarRectangulo();
+    }//GEN-LAST:event_btnEscalarActionPerformed
+
+    private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
+                controlador.verificarPunto();
+    }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
      * @param args the command line arguments
