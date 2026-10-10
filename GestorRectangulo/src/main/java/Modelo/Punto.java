@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Modelo;
-
 /**
  *
  * @author Titoelgato
@@ -33,4 +32,9 @@ public class Punto {
         this.y = y;
     }
     
+     @Override
+     
+     public String toString(){
+         return "(" + x + ", " + y + ")"; 
+     }
 }
