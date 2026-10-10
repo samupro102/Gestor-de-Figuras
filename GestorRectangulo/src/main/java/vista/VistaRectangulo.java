@@ -18,7 +18,53 @@ public class VistaRectangulo extends javax.swing.JFrame {
     public VistaRectangulo() {
         initComponents();
     }
+    public void setControlador(java.awt.event.ActionListener c) {
+        btnCrear.addActionListener(c);
+        btnArea.addActionListener(c);
+        btnMover.addActionListener(c);
+        btnEscalar.addActionListener(c);
+        btnVerificar.addActionListener(c);
+    }
 
+    public double getX1() {
+        return Double.parseDouble(txtX1.getText());
+    }
+
+    public double getY1() {
+        return Double.parseDouble(txtY1.getText());
+    }
+
+    public double getX2() {
+        return Double.parseDouble(txtX2.getText());
+    }
+
+    public double getY2() {
+        return Double.parseDouble(txtY2.getText());
+    }
+
+    public double getPx() {
+        return Double.parseDouble(txtPx.getText());
+    }
+
+    public double getPy() {
+        return Double.parseDouble(txtPy.getText());
+    }
+
+    public double getDx() {
+        return Double.parseDouble(txtDx.getText());
+    }
+
+    public double getDy() {
+        return Double.parseDouble(txtDy.getText());
+    }
+
+    public double getFactor() {
+        return Double.parseDouble(txtFactor.getText());
+    }
+
+    public void mostrarResultado(String texto) {
+        txtResultado.append(texto + "\n");
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -59,8 +105,6 @@ public class VistaRectangulo extends javax.swing.JFrame {
 
         lblX1.setText("Esquina 1 - X:");
 
-        txtX1.setText("jTextField1");
-
         lblPy.setText("Punto - Y:");
 
         lblPx.setText("Punto - X:");
@@ -77,21 +121,9 @@ public class VistaRectangulo extends javax.swing.JFrame {
 
         lblDy.setText("Mover dy:");
 
-        txtY1.setText("jTextField1");
+        txtDx.addActionListener(this::txtDxActionPerformed);
 
-        txtX2.setText("jTextField1");
-
-        txtY2.setText("jTextField1");
-
-        txtPx.setText("jTextField1");
-
-        txtPy.setText("jTextField1");
-
-        txtDx.setText("jTextField1");
-
-        txtDy.setText("jTextField1");
-
-        txtFactor.setText("jTextField1");
+        txtDy.addActionListener(this::txtDyActionPerformed);
 
         btnCrear.setText("Crear rectángulo");
 
@@ -209,30 +241,18 @@ public class VistaRectangulo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtDxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDxActionPerformed
+
+    private void txtDyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDyActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new VistaRectangulo().setVisible(true));
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnArea;
