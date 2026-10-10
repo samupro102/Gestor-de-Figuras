@@ -48,5 +48,17 @@ public class Rectangulo extends FiguraGeometrica {
         esquina2.setY(esquina2.getY() + dy);
     }
     
+    public boolean contienePunto(Punto p) {
+        double xMin = Math.min(esquina1.getX(), esquina2.getX());
+        double xMax = Math.max(esquina1.getX(), esquina2.getX());
+        double yMin = Math.min(esquina1.getY(), esquina2.getY());
+        double yMax = Math.max(esquina1.getY(), esquina2.getY());
+
+        return p.getX() >= xMin && p.getX() <= xMax
+                && p.getY() >= yMin && p.getY() <= yMax;
+    }
     
-}
+    
+    }
+    
+
