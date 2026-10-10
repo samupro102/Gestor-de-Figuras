@@ -12,6 +12,8 @@ import vista.VistaRectangulo;
 public class GestorRectangulo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        VistaRectangulo vista = new VistaRectangulo();
+        new ControladorRectangulo(vista);
+        vista.setVisible(true);
     }
 }
