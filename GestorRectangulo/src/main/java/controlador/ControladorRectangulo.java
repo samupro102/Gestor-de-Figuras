@@ -27,7 +27,14 @@ public class ControladorRectangulo {
         }
         return true;
     }
-    
+ public void crearRectangulo() {
+        Punto p1 = new Punto(vista.getX1(), vista.getY1());
+        Punto p2 = new Punto(vista.getX2(), vista.getY2());
+        rectangulo = new Rectangulo(p1, p2);
+        vista.mostrarResultado("Creado: " + rectangulo);
+    }
+}
+   
     
     
     
