@@ -20,6 +20,21 @@ public class Rectangulo extends FiguraGeometrica{
         this.esquina2 = esquina2;
     }
 
+    public Punto getEsquina1() {
+        return esquina1;
+    }
 
+    public Punto getEsquina2() {
+        return esquina2;
+    }
+
+    public double getBase() {
+        return Math.abs(esquina2.getX() - esquina1.getX());
+    }
+
+    public double getAltura() {
+        return Math.abs(esquina2.getY() - esquina1.getY());
+    }
+    
     
 }
