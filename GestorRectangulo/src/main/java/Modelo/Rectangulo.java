@@ -57,7 +57,12 @@ public class Rectangulo extends FiguraGeometrica {
         return p.getX() >= xMin && p.getX() <= xMax
                 && p.getY() >= yMin && p.getY() <= yMax;
     }
-    
+        public void escalar(double factor) {
+        double nuevoX = esquina1.getX() + (esquina2.getX() - esquina1.getX()) * factor;
+        double nuevoY = esquina1.getY() + (esquina2.getY() - esquina1.getY()) * factor;
+        esquina2.setX(nuevoX);
+        esquina2.setY(nuevoY);
+    }
     public String toString(){
         
         return  nombre + "con esquinas:" + esquina1 + esquina2 + "con la base" + getBase() +  "Y la latura" + getAltura() + " y el area " + calcularArea();
