@@ -44,6 +44,12 @@ public class ControladorRectangulo {
             vista.mostrarResultado("Movido: " + rectangulo);
         }
     }
+    public void escalarRectangulo() {
+        if (hayRectangulo()) {
+            rectangulo.escalar(vista.getFactor());
+            vista.mostrarResultado("Escalado: " + rectangulo);
+        }
+    }
  
  
  
