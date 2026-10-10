@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.gestorrectangulo;
-
+import controlador.ControladorRectangulo;
+import vista.VistaRectangulo;
 /**
  *
  * @author Titoelgato
